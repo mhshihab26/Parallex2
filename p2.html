@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="main.js">
+
+</head>
+<body>
+    <header>
+     <!--<div class="logo"><a href="#">Logo</a></div>--> 
+     <h2 class="logo">Logo</h2>  
+        <nav class="navbar">
+            <a href="#" class="active">Home</a>
+            <a href="#">About</a>
+            <a href="#">Contact</a>
+            <a href="#">Service</a>
+            <a href="#">Login</a>
+
+        </nav>
+    </header>
+        <section class="parallax">       
+            <img src="img/hill1.png" id="hill1">
+            <img src="img/hill2.png" id="hill2">
+            
+            <img src="img/hill3.png" id="hill3">
+           
+            <img src="img/hill4.png" id="hill4">
+            <img src="img/hill5.png" id="hill5">
+            <img src="img/tree.png" id="tree">
+            <h2 id="text">Forest View</h2>
+            <img src="img/leaf.png" id="leaf">
+            <img src="img/plant.png" id="[plant]">
+         
+
+        </section>
+        <section class="textpart">
+            <h2>The Scolling Website</h2>
+            
+
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quasi reprehenderit quidem at quam. Voluptatibus est corrupti itaque quam pariatur, debitis officia, deleniti aspernatur exercitationem quasi eaque voluptate quibusdam consequatur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fuga et explicabo id nesciunt tempora consectetur quas! Officiis maiores voluptates est quibusdam quis laboriosam quae sapiente, iusto dicta aliquam esse.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis reprehenderit modi iste minima in. Consequuntur dolorem deserunt nihil rem quas? Maiores iste eum alias natus? Beatae sunt maiores facilis iusto.
+                <br> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quasi reprehenderit quidem at quam. Voluptatibus est corrupti itaque quam pariatur, debitis officia, deleniti aspernatur exercitationem quasi eaque voluptate quibusdam consequatur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fuga et explicabo id nesciunt tempora consectetur quas! Officiis maiores voluptates est quibusdam quis laboriosam quae sapiente, iusto dicta aliquam esse.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis reprehenderit modi iste minima in. Consequuntur dolorem deserunt nihil rem quas? Maiores iste eum alias natus? Beatae sunt maiores facilis iusto.
+                <br> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quasi reprehenderit quidem at quam. Voluptatibus est corrupti itaque quam pariatur, debitis officia, deleniti aspernatur exercitationem quasi eaque voluptate quibusdam consequatur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fuga et explicabo id nesciunt tempora consectetur quas! Officiis maiores voluptates est quibusdam quis laboriosam quae sapiente, iusto dicta aliquam esse.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis reprehenderit modi iste minima in. Consequuntur dolorem deserunt nihil rem quas? Maiores iste eum alias natus? Beatae sunt maiores facilis iusto.
+                <br> <br>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quasi reprehenderit quidem at quam. Voluptatibus est corrupti itaque quam pariatur, debitis officia, deleniti aspernatur exercitationem quasi eaque voluptate quibusdam consequatur.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio fuga et explicabo id nesciunt tempora consectetur quas! Officiis maiores voluptates est quibusdam quis laboriosam quae sapiente, iusto dicta aliquam esse.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Debitis reprehenderit modi iste minima in. Consequuntur dolorem deserunt nihil rem quas? Maiores iste eum alias natus? Beatae sunt maiores facilis iusto.
+                <br> <br>
+            </p>
+
+
+        </section>
+    <div class="box">
+           
+    </div>
+    <script>
+
+let text = document.getElementById('text');
+let leaf = document.getElementById('leaf');
+let hill1 = document.getElementById('hill1');
+let hill4 = document.getElementById('hill4');
+let hill5 = document.getElementById('hill5');
+
+window.addEventListener('scroll', () => {
+    let value = window.scrollY;
+
+    text.style.marginTop = value * 1.5 + 'px';
+    leaf.style.top = value * -1.5 + 'px';
+    leaf.style.left= value * 1.5 + 'px';
+    hill5.style.left = value * 1.5 + 'px';
+    hill4.style.left = value * -1.5 + 'px';
+    hill1.style.top = value * .7 + 'px';
+
+});
+    </script>
+
+
+</body>
+</html>
